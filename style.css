@@ -1,0 +1,11 @@
+/* Estilizações globais */
+body{
+    background-color: burlywood;
+}
+
+
+/* Estilização do conteúdo */
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+}
