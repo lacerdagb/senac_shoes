@@ -1,6 +1,44 @@
 /* Estilizações globais */
 body{
-    background-color: burlywood;
+    background-color: rgb(207, 182, 147);
+    margin: 0px;
+    margin-top: 60px;
+    display: grid; /*Faz o container se comportar em grade*/
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 60px; /*Espaçamento para todos os lados entre os componentes*/
+    justify-items: center; /* Centraliza todos os itens*/
+}
+
+img {
+    max-width: 100%; /*Faz com que a imagem ocupe apenas 100% da coluna*/
+    display: block; /*Se comporte como bloco, para não quebrar*/
+}
+
+a {
+    text-decoration: none;
+}
+p, h1, h2, h3 {
+    margin: 0px;
+}
+p {
+    font-size: 20px;
+}
+/*Estilização Menu*/
+.menu {
+    display: flex; /*Garante que os links fique centre ao lado*/
+    gap: 20px; /*Separa os elementos*/
+    justify-content: center;
+}
+.menu a {
+    text-transform: uppercase;
+    background-color: #FFF;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #000;
+}
+.menu a:hover {
+    background-color: #9353ff;
+
 }
 
 
@@ -8,4 +46,25 @@ body{
 .conteudo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);;
+    max-width: 1000px;
+}
+
+.botao {
+    background-color: #9353ff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.botao:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+/*Esterização do footer*/
+.rodape {
+    background-color: #FFF;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
 }
