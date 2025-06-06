@@ -41,7 +41,6 @@ p {
 
 }
 
-
 /* Estilização do conteúdo */
 .conteudo {
     display: grid;
@@ -55,6 +54,7 @@ p {
     border-radius: 4px;
     text-transform: uppercase;
     color: #FFF;
+    /* place-items: end; encurar o botão*/
 }
 .botao:hover {
     background-color: #FFF;
@@ -66,5 +66,39 @@ p {
     background-color: #FFF;
     text-align: center;
     padding: 40px;
-    width: 100%;
+    width: 95%;
+}
+
+/* Estilização da introducao */
+.introducao {
+    display: grid;
+    padding: 40px;
+    text-align: end;
+    align-content: center;
+    gap: 20px;
+    background-color: rgb(209, 188, 158);
+    justify-items: end; 
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    font-size: 64px;
+    text-align: end;
+    padding: 40px;
+    align-self: center;
+    color: #00000044;
+
+}
+.vantagens {
+    background-color: rgb(209, 188, 158);
+    padding: 40px;
+}
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+}
+.vantagens-item p {
+    grid-column: 2;
 }
